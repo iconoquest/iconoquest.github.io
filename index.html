@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iconoquest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <button type="button" class="index-btn" id="index-btn" aria-expanded="false" aria-controls="sidebar">
+      <span class="bars" aria-hidden="true"></span>
+      Index
+    </button>
+    <span class="brand">Iconoquest</span>
+  </header>
+
+  <div id="scrim" class="scrim" hidden></div>
+
+  <nav id="sidebar" class="sidebar" aria-label="Folder index" tabindex="-1" inert>
+    <p id="side-label" class="side-label">Folders</p>
+    <div id="tree" class="tree" aria-labelledby="side-label"></div>
+  </nav>
+
+  <main>
+    <article id="view">
+      <p class="empty">Open the index and choose a page.</p>
+    </article>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
