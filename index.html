@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el" data-theme="parchment">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Iconoquest</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICONOQUEST AI – Αναζητώντας την αλήθεια πίσω από τις εικόνες</title>
+<link rel="stylesheet" href="css/app.css">
 </head>
-<body>
-  <header class="top">
-    <button type="button" class="index-btn" id="index-btn" aria-expanded="false" aria-controls="sidebar">
-      <span class="bars" aria-hidden="true"></span>
-      Index
-    </button>
-    <span class="brand">Iconoquest</span>
+<body data-page="home" data-root="">
+<div class="app">
+  <header>
+    <a class="brand" href="index.html">
+      <h1>ICONO<b>QUEST</b> AI</h1>
+      <p>Αναζητώντας την αλήθεια πίσω από τις εικόνες · Σχολικό Εκπαιδευτικό Πρόγραμμα</p>
+    </a>
+    <nav class="bar menu">
+      <a class="btn" href="arxeio/index.html">Πηγές</a>
+      <a class="btn" href="ekpaideftikos/index.html">Εκπαιδευτικός</a>
+      <a class="btn" href="rythmiseis/index.html">Ρυθμίσεις</a>
+    </nav>
   </header>
-
-  <div id="scrim" class="scrim" hidden></div>
-
-  <nav id="sidebar" class="sidebar" aria-label="Folder index" tabindex="-1" inert>
-    <p id="side-label" class="side-label">Folders</p>
-    <div id="tree" class="tree" aria-labelledby="side-label"></div>
-  </nav>
-
-  <main>
-    <article id="view">
-      <p class="empty">Open the index and choose a page.</p>
-    </article>
-  </main>
-
-  <script src="app.js"></script>
+  
+  <section class="hero">
+    <div class="question">
+      <small>Κεντρικό Ερώτημα</small>
+      <h2>Γιατί μια εικόνα έγινε αντικείμενο τόσο μεγάλης θεολογικής και ιστορικής διαμάχης στη Βυζαντινή Αυτοκρατορία;</h2>
+    </div>
+    <div class="frame">Πλαίσιο εικόνας βυζαντινής τέχνης / Εικονομαχίας</div>
+  </section>
+  <div class="sheet">
+    <p class="sec-note"><a href="arxeio/index.html">Αρχείο πηγών</a> — ανοιχτό όποτε το χρειάζεστε. Η πρόοδος των σταδίων μένει ως έχει.</p>
+    <h2 class="sec-title">Στάδια της αποστολής</h2>
+    <p id="groupLine" class="sec-note"></p>
+    <nav class="grid" id="cards"></nav>
+  </div>
+  <footer>ICONOQUEST AI · Εκπαιδευτική εφαρμογή για το μάθημα της Εικονομαχίας</footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="js/data.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/cloud.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

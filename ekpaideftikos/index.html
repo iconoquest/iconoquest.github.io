@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="el" data-theme="parchment">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Εκπαιδευτικός – ICONOQUEST</title>
+<link rel="stylesheet" href="../css/app.css">
+</head>
+<body data-page="ekpaideftikos" data-root="../">
+<div class="app">
+  <header>
+    <a class="brand" href="../index.html">
+      <h1>ICONO<b>QUEST</b> AI</h1>
+      <p>Αναζητώντας την αλήθεια πίσω από τις εικόνες · Σχολικό Εκπαιδευτικό Πρόγραμμα</p>
+    </a>
+    <nav class="bar menu">
+      <a class="btn" href="../arxeio/index.html">Πηγές</a>
+      <a class="btn" href="../ekpaideftikos/index.html">Εκπαιδευτικός</a>
+      <a class="btn" href="../rythmiseis/index.html">Ρυθμίσεις</a>
+    </nav>
+  </header>
+  
+  <main class="sheet" id="stage">
+    <h1>Πίνακας εκπαιδευτικού</h1>
+    <div class="row"><span>Υποβολές: <strong id="dashCount">0</strong></span>
+      <div class="bar">
+        <button id="reload" class="btn" type="button">Ανανέωση</button>
+        <button id="anon" class="btn" type="button">Ανώνυμη προβολή</button>
+        <button id="csv" class="btn" type="button">Εξαγωγή CSV</button>
+      </div>
+    </div>
+    <select id="dashFilter" aria-label="Φίλτρο δραστηριότητας">
+      <option value="">Όλες οι δραστηριότητες</option>
+      <option>1ο Στάδιο: Εισαγωγή</option>
+      <option>Ιστορικές Πηγές</option>
+      <option>Decode the Icon</option>
+      <option>Quiz Εικονομαχίας</option>
+      <option>Τελική Αποστολή (Exit Ticket)</option>
+    </select>
+    <div id="dashList"></div>
+  </main>
+  <footer>ICONOQUEST AI · Εκπαιδευτική εφαρμογή για το μάθημα της Εικονομαχίας</footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/data.js"></script>
+<script src="../js/progress.js"></script>
+<script src="../js/cloud.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

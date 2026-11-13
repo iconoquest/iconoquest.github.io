@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="el" data-theme="parchment">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ρυθμίσεις – ICONOQUEST</title>
+<link rel="stylesheet" href="../css/app.css">
+</head>
+<body data-page="rythmiseis" data-root="../">
+<div class="app">
+  <header>
+    <a class="brand" href="../index.html">
+      <h1>ICONO<b>QUEST</b> AI</h1>
+      <p>Αναζητώντας την αλήθεια πίσω από τις εικόνες · Σχολικό Εκπαιδευτικό Πρόγραμμα</p>
+    </a>
+    <nav class="bar menu">
+      <a class="btn" href="../arxeio/index.html">Πηγές</a>
+      <a class="btn" href="../ekpaideftikos/index.html">Εκπαιδευτικός</a>
+      <a class="btn" href="../rythmiseis/index.html">Ρυθμίσεις</a>
+    </nav>
+  </header>
+  
+  <main class="sheet" id="stage">
+    <h1>Ρυθμίσεις</h1>
+    <h2 class="set-h">Εμφάνιση</h2>
+    <label>Χρώμα φόντου</label>
+    <div class="sw" id="themes"></div>
+    <input id="bg" type="color" aria-label="Προσαρμοσμένο φόντο">
+    <label>Χρώμα έμφασης</label>
+    <div class="sw" id="accents"></div>
+    <input id="accent" type="color" aria-label="Προσαρμοσμένο χρώμα έμφασης">
+    <label for="r-fs">Μέγεθος γραμματοσειράς: <span id="v-fs">16px</span></label>
+    <input id="r-fs" type="range" min="13" max="22" step="1" value="16">
+    <label class="switch"><span>Κινήσεις και εφέ</span><input id="motion" type="checkbox"></label>
+    <h2 class="set-h">Ήχος</h2>
+    <label for="r-vol">Ένταση ήχου: <span id="v-vol">80%</span></label>
+    <input id="r-vol" type="range" min="0" max="100" step="5" value="80">
+    <label for="r-rate">Ταχύτητα ανάγνωσης: <span id="v-rate">95%</span></label>
+    <input id="r-rate" type="range" min="60" max="140" step="5" value="95">
+    <label class="switch"><span>Ηχητικά εφέ</span><input id="sfx" type="checkbox"></label>
+    <div style="margin-top:12px"><button id="voice" class="btn" type="button">Δοκιμή φωνής</button></div>
+    <h2 class="set-h">Απόρρητο</h2>
+    <label class="switch"><span>Ανώνυμη προβολή στον πίνακα εκπαιδευτικού</span><input id="anon" type="checkbox"></label>
+    <div style="margin-top:20px"><button id="reset" class="btn" type="button">Επαναφορά προεπιλογών</button></div>
+  </main>
+  <footer>ICONOQUEST AI · Εκπαιδευτική εφαρμογή για το μάθημα της Εικονομαχίας</footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/data.js"></script>
+<script src="../js/progress.js"></script>
+<script src="../js/cloud.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="el" data-theme="parchment">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Χρονολόγιο – ICONOQUEST</title>
+<link rel="stylesheet" href="../css/app.css">
+</head>
+<body data-page="chronologio" data-root="../">
+<div class="app">
+  <header>
+    <a class="brand" href="../index.html">
+      <h1>ICONO<b>QUEST</b> AI</h1>
+      <p>Αναζητώντας την αλήθεια πίσω από τις εικόνες · Σχολικό Εκπαιδευτικό Πρόγραμμα</p>
+    </a>
+    <nav class="bar menu">
+      <a class="btn" href="../arxeio/index.html">Πηγές</a>
+      <a class="btn" href="../ekpaideftikos/index.html">Εκπαιδευτικός</a>
+      <a class="btn" href="../rythmiseis/index.html">Ρυθμίσεις</a>
+    </nav>
+  </header>
+  
+  <main class="sheet" id="stage">
+    <h1>2ο Στάδιο: Χρονολόγιο και ιστορικό πλαίσιο</h1>
+    <p id="groupNote" class="sec-note"></p>
+    <button id="listen" class="btn" type="button">Ακρόαση περίληψης</button>
+    <div class="box" style="border-left:3px solid var(--info);margin-top:14px"><strong>Βασική θεολογική διάκριση</strong><br>Δεν λατρεύεται η ύλη της εικόνας. Η τιμή αποδίδεται αποκλειστικά στο εικονιζόμενο πρόσωπο.</div>
+    <p>Επιλέξτε το σωστό έτος για κάθε γεγονός:</p>
+    <div class="tl"><label for="ev0">Έναρξη της Εικονομαχίας</label><select id="ev0"><option value="">Έτος</option><option>843</option><option>726</option><option>815</option><option>787</option></select></div><div class="tl"><label for="ev1">Ζ΄ Οικουμενική Σύνοδος στη Νίκαια</label><select id="ev1"><option value="">Έτος</option><option>843</option><option>726</option><option>815</option><option>787</option></select></div><div class="tl"><label for="ev2">Αναζωπύρωση της Εικονομαχίας</label><select id="ev2"><option value="">Έτος</option><option>843</option><option>726</option><option>815</option><option>787</option></select></div><div class="tl"><label for="ev3">Οριστική αναστήλωση των εικόνων</label><select id="ev3"><option value="">Έτος</option><option>843</option><option>726</option><option>815</option><option>787</option></select></div>
+    <button id="check" class="btn block" type="button">Έλεγχος σειράς</button>
+    <div id="tlFb" class="fb" role="status"></div>
+  </main>
+  <footer>ICONOQUEST AI · Εκπαιδευτική εφαρμογή για το μάθημα της Εικονομαχίας</footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/data.js"></script>
+<script src="../js/progress.js"></script>
+<script src="../js/cloud.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
